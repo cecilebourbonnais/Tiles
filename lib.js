@@ -46,7 +46,7 @@ var pages = {
     ["#","mt","Code","~/hack.sh"],
   ],
   "Home":[ // Index page loads at and resets to on end of search or 'esc'
-    ["https://github.com/Boettner-eric/Tiles","ba","Back","To Github","*"],
+    ["https://nyt.com","ba","Back","To NYT","*"],
     ["~Github"], // example of reference
     ["https://gmail.com","gm","Gmail","Inboxes","google"],
     ["https://todoist.com/app#start","td","Todoist","Tasks"],
@@ -74,11 +74,11 @@ var pages = {
     ["https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md","qmk","QMK Keycodes","hyper(kc)"],
   ],
   "Media":[
-    ["https://hbogo.com/","hb","HBO GO","Westworld"],
-    ["https://www.youtube.com/","yt","Youtube","Daily Tech Fix"],
     ["https://netflix.com","nt","Netflix","US Proxy"],
-    ["https://www.hulu.com","hu","Hulu","Top Chef !!!"],
-    ["https://soundcloud.com","su","Soundcloud","Mixtape Madness"],
+    ["https://play.hbomax.com/page/urn:hbo:page:home","hb","HBO Max","The Leftovers"],
+    ["https://www.youtube.com/","yt","Youtube","Daily Tech Fix"],
+    ["https://www.hulu.com","hu","Hulu","Live TV"],
+    ["https://disneyplus.com","di","Disney+","Marvel & Pixar"],
     ["https://twitch.com","tt","Twitch","Livestream"],
     ["https://vimeo.com","vo","Vimeo","Video Platform"],
     ["https://www.fubo.tv/welcome","ad","FuboTv","Futbol"],
