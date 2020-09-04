@@ -47,10 +47,9 @@ var pages = {
   ],
   "Home":[ // Index page loads at and resets to on end of search or 'esc'
     ["https://nyt.com","ba","Back","To NYT","*"],
-    ["~Github"], // example of reference
+    ["~Weather"], // syntax for referencing functions
     ["https://gmail.com","gm","Gmail","Inboxes","google"],
-    ["https://todoist.com/app#start","td","Todoist","Tasks"],
-    ["https://pcpartpicker.com","pc","PcParts","Pcpartpicker"],
+    // ["https://todoist.com/app#start","td","Todoist","Tasks"],
     ["~News"],
     ["~Media"],
     ["~Networks"],
@@ -75,10 +74,10 @@ var pages = {
   ],
   "Media":[
     ["https://netflix.com","nt","Netflix","US Proxy"],
-    ["https://play.hbomax.com/page/urn:hbo:page:home","hb","HBO Max","The Leftovers"],
+    ["https://play.hbomax.com/page/urn:hbo:page:home","hb","HBO Max","The Leftovers!!"],
     ["https://www.youtube.com/","yt","Youtube","Daily Tech Fix"],
     ["https://www.hulu.com","hu","Hulu","Live TV"],
-    ["https://disneyplus.com","di","Disney+","Marvel & Pixar"],
+    ["https://disneyplus.com","di","Disney+","Pixar"],
     ["https://twitch.com","tt","Twitch","Livestream"],
     ["https://vimeo.com","vo","Vimeo","Video Platform"],
     ["https://www.fubo.tv/welcome","ad","FuboTv","Futbol"],
@@ -103,7 +102,6 @@ var pages = {
     ["https://discordapp.com","ds","Discord","Chat Channels"],
   ],
   "News":[
-    ["~Weather"], // syntax for referencing functions
     ["bbc-news","~bbc","BBC","","news"],
     ["the-new-york-times","~globe","New York Times","","news"],
     ["reuters","ru","Reuters","","news"],
@@ -142,9 +140,7 @@ var pages = {
     ["$","lv","Lava","Red Black",["#000000","#D32F2F","#DD4132","#99AAB5","#99AAB5"]],
     ["$","tt","Purple","Purple Red Blue",["#6B5B95","#FF383F","#223A5E","#F0EDE5","#F0EDE5"]],
     ["$","bl","Blues","Blue, Grey",["#25274D","#2E9CCA","#29648A","#AAABB8","#ffffff"]],
-    ["$","bl","Blues","Blue, Grey",["#25274D","#2E9CCA","#29648A","#AAABB8","#ffffff"]],
-    ["$","bl","Blues","Blue, Grey",["#25274D","#2E9CCA","#29648A","#AAABB8","#ffffff"]],
-    ["$","bl","Blues","Blue, Grey",["#25274D","#2E9CCA","#29648A","#AAABB8","#ffffff"]],
+    ["$","bl","Nord","Arctic, North-Bluish",["#3B4252","#5E81AC","#BF616A","#81A1C1","#ECEFF4"]],
     ["$","bl","Blues","Blue, Grey",["#25274D","#2E9CCA","#29648A","#AAABB8","#ffffff"]],
     ["$","pnr","Starry Night","Blue Green Yellow",["src/wall/starry.jpg","#007849","#FECE00","#FFFFFF","#FFFFFF"]],
   ]
@@ -171,7 +167,7 @@ function update_tiles(){ // for all tiles to load on start or other events
 }
 */
 
-var zip = "97202"; // changes when searching valid zips / or when zip is saved
+var zip = "94303"; // changes when searching valid zips / or when zip is saved
 var oldzip = "";
 var weather = ["@w","weather/01d","Weather","Updating...","weather"]; // default tile
 
@@ -249,7 +245,7 @@ function dict_tile(num,current){
 
 function update_news(tile){
   var start = "https://newsapi.org/v2/top-headlines?sources=";
-  var api = "&apiKey=136cb894cf1645769184e7bf91842a06";
+  var api = "&apiKey=e900a0631c644d62b4e3b22f1fcaf497";
   if (api == ""){
     tile[2] = "No Api Key";
     console.log("need api key for this");
