@@ -40,49 +40,36 @@ var pages = {
     // folders
     ["#","go","Themes","Colors"],
     ["#","~news","News","Headlines"],
-    ["#","~ctrl","Keyboards","Ctrl Alt Del"],
+    ["#","g","Google","Gsuite"],
     ["#","me","Media","Stream"],
+    ["#","hw","School","Study Materials"],
     ["#","~twitter","Networks","Social Media"],
-    ["#","mt","Code","~/hack.sh"],
+    ["#","mt","Computer","~/hack.sh"],
   ],
   "Home":[ // Index page loads at and resets to on end of search or 'esc'
-    ["https://nyt.com","ba","Back","To NYT","*"],
+    // ["https://nyt.com","ba","Back","To NYT","*"],
     ["~Weather"], // syntax for referencing functions
-    ["https://gmail.com","gm","Gmail","Inboxes","google"],
+    ["~School"],
     // ["https://todoist.com/app#start","td","Todoist","Tasks"],
     ["~News"],
     ["~Media"],
     ["~Networks"],
-    ["~Code"],
-    ["~Keyboards"],
-    ["https://icons8.com","ic","Icons8","Icon Set"],
+    ["~Computer"],
+    ["~Google"],
+    // ["https://icons8.com","ic","Icons8","Icon Set"],
     ["~Themes"],
-  ],
-  "Keyboards":[
-    ["#Home","esc","Back","Endgame Achieved?","*"],
-    ["https://www.massdrop.com/mechanical-keyboards","ct","Massdrop","GBs"],
-    ["https://www.reddit.com/r/MechanicalKeyboards/","re","r/MK","Reddit"],
-    ["https://mitormk.com","mt","MitoMK","Laser SA"],
-    ["https://www.jellykey.com","jy","JellyKeys","Artisans"],
-    ["https://keyhive.xyz/shop","hc","Key hive","Honeycomb"],
-    ["https://keeb.io","kb","Keeb.io","Iris/Split"],
-    ["https://discordapp.com","ds","Discord","QMK/PDXKBC"],
-    ["https://www.rpi.edu/dept/arc/training/latex/LaTeX_symbols.pdf","pi","Latex","Symbol Dictionary"],
-    ["http://www.keyboard-layout-editor.com","~ctrl","Keylayout","QMK Editor"],
-    ["https://thomasbaart.nl","key","QMK Basics","Tutorials"],
-    ["https://github.com/qmk/qmk_firmware/blob/master/docs/keycodes.md","qmk","QMK Keycodes","hyper(kc)"],
   ],
   "Media":[
     ["https://netflix.com","nt","Netflix","US Proxy"],
     ["https://play.hbomax.com/page/urn:hbo:page:home","hb","HBO Max","The Leftovers!!"],
-    ["https://www.youtube.com/","yt","Youtube","Daily Tech Fix"],
+    ["https://www.youtube.com/","yt","Youtube","Videos"],
     ["https://www.hulu.com","hu","Hulu","Live TV"],
     ["https://disneyplus.com","di","Disney+","Pixar"],
-    ["https://twitch.com","tt","Twitch","Livestream"],
-    ["https://vimeo.com","vo","Vimeo","Video Platform"],
-    ["https://www.fubo.tv/welcome","ad","FuboTv","Futbol"],
+    // ["https://twitch.com","tt","Twitch","Livestream"],
+    ["https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index","fm","Free Media","Links Wiki"],
+    ["https://www.stream2watch.io","ad","Sports","Live Football"],
   ],
-  "Code":[
+  "Computer":[
     ["~Github"],
     ["http://stackoverflow.com","st","Stack Overflow","Java?"],
     ["https://1password.com","op","1Password","Database"],
@@ -93,26 +80,51 @@ var pages = {
     ["https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet","md","Markdown","Cheatsheet"],
     ["https://keycode.info","ct","Keycodes","Javascript"],
   ],
+  "Google":[
+    ["https://gmail.com","gm","Gmail","Inbox"],
+    ["https://drive.google.com/drive/u/0/my-drive","gdrive","Drive","Files"],
+    ["https://docs.google.com/documnt/u/0/","gdocs","Docs","Papers"],
+    ["http://maps.google.com","gmaps"," Maps","Directions"],
+    ["https://images.google.com","gim","Images","Photos"],
+  ],
   "Networks":[
     ["https://twitter.com","~twitter","Twitter","Internet News"],
     ["https://facebook.com","fa","Facebook","Delete me"],
-    ["https://reddit.com/","re","Reddit","r/unixporn"],
+    ["https://reddit.com/","re","Reddit","Homepage"],
     ["https://www.instagram.com","im","Instagram","Photos"],
+    ["http://ohnotheydidnt.livejournal.com","ontd2","ONTD","Gossip"],
+    ["https://www.reddit.com/r/Barca","barca","Barça","r/barca"],
+    ["https://www.reddit.com/r/Soccer","soccer","Soccer","r/soccer"],
     ["~Linkedn"],
-    ["https://discordapp.com","ds","Discord","Chat Channels"],
   ],
   "News":[
-    ["bbc-news","~bbc","BBC","","news"],
-    ["the-new-york-times","~globe","New York Times","","news"],
-    ["reuters","ru","Reuters","","news"],
-    ["ars-technica","ars","Ars Technica","","news"],
-    ["cnn","cnn","CNN","","news"],
-    ["ign","ign","ign","","news"],
-    ["the-verge","ver","The Verge","","news"],
-    ["hacker-news","yc","Ycombinator","","news"],
-    ["national-geographic","pnr","Nat Geo","","news"],
-    ["https://newsapi.org","n","News Api","Headlines"],
+    ["https://nyt.com","nyt2","New York Times","The Times"],
+    ["https://www.washingtonpost.com","washpo2","Washington Post","Bezos"],
+    ["https://news.ycombinator.com","yc","Hacker News","Entrepreneurship"],
+    ["http://longform.org","bookmark","Longform","Top-shelf"],
+    ["https://nationalgeographic.com","pnr","Nat Geo","Great Outdoors"],
+    ["https://theverge.com","ver","The Verge","Tech News"],
+    ["https://www.vox.com/energy-and-environment","vox","Vox","Energy News"],
   ],
+  "School":[
+    ["http://axess.sahr.stanford.edu","stanford","Axess","Enrollment"],
+    ["https://canvas-gateway.stanford.edu/goCanvas.html","canvas","Canvas","Courses"],
+
+  ],
+
+
+  // "News":[
+  //   ["bbc-news","~bbc","BBC","","news"],
+  //   ["the-new-york-times","~globe","New York Times","","news"],
+  //   ["reuters","ru","Reuters","","news"],
+  //   ["ars-technica","ars","Ars Technica","","news"],
+  //   ["cnn","cnn","CNN","","news"],
+  //   ["ign","ign","ign","","news"],
+  //   ["the-verge","ver","The Verge","","news"],
+  //   ["hacker-news","yc","Ycombinator","","news"],
+  //   ["national-geographic","pnr","Nat Geo","","news"],
+  //   ["https://newsapi.org","n","News Api","Headlines"],
+  // ],
   /*
     Dict of possible live tiles
     - Search -> Search possible source with VAR placeholder for parser to fill
@@ -131,6 +143,8 @@ var pages = {
     ["https://www.wolframalpha.com/input/?i=VAR","wp","Wolfram","\"VAR\"",term],
   ],
   "Themes":[ // put tiles for each theme here
+    ["$","nord","Nord","Arctic, Bluish",["#2E3440","#5E81AC","#88C0D0","#D8DEE9","#ECEFF4"]],
+    ["$","nordlight","Nord Light","Daytime Hues",["#E5E9F0","#81A1C1","#5E81AC","#4C566A","#2E3440"]],
     ["$","ds","Discord","Purple, Black, Grey",['#23272A','#2C2F33','#7289DA','#7289DA','#99AAB5']],
     ["$","sk","Skeletor","Green, Purple, Green",  ["#2b2836","#93b4ff","#bd93f9","#84fba2","#ffffff"]],
     ["$","tm","Terminal","Green Black",["#282828","#282828","#33FF33","#33FF33","#33FF33"]],
@@ -140,18 +154,15 @@ var pages = {
     ["$","lv","Lava","Red Black",["#000000","#D32F2F","#DD4132","#99AAB5","#99AAB5"]],
     ["$","tt","Purple","Purple Red Blue",["#6B5B95","#FF383F","#223A5E","#F0EDE5","#F0EDE5"]],
     ["$","bl","Blues","Blue, Grey",["#25274D","#2E9CCA","#29648A","#AAABB8","#ffffff"]],
-    ["$","bl","Nord","Arctic, North-Bluish",["#3B4252","#5E81AC","#BF616A","#81A1C1","#ECEFF4"]],
-    ["$","bl","Blues","Blue, Grey",["#25274D","#2E9CCA","#29648A","#AAABB8","#ffffff"]],
-    ["$","pnr","Starry Night","Blue Green Yellow",["src/wall/starry.jpg","#007849","#FECE00","#FFFFFF","#FFFFFF"]],
   ]
 };
 
 
 function update_tiles(){ // for all tiles to load on start or other events
     update_weather();
-    for (i = 1; i < pages["News"].length-1; i++){
-      update_news(pages["News"][i]);
-    };
+    // for (i = 1; i < pages["News"].length-1; i++){
+    //   update_news(pages["News"][i]);
+    // };
 };
 
 /*
@@ -172,7 +183,7 @@ var oldzip = "";
 var weather = ["@w","weather/01d","Weather","Updating...","weather"]; // default tile
 
 function update_weather(num){
-  var api = "676fed7baf0fa449b76b320a14187224";
+  var api = "cf6fc06376e6f64d87552213a52b173b";
   var url = "https://api.openweathermap.org/data/2.5/weather?zip="+ zip + ",us&appid=" + api;
 
   if (num != undefined){
@@ -245,13 +256,14 @@ function dict_tile(num,current){
 
 function update_news(tile){
   var start = "https://newsapi.org/v2/top-headlines?sources=";
-  var api = "&apiKey=e900a0631c644d62b4e3b22f1fcaf497";
+  var api = "e900a0631c644d62b4e3b22f1fcaf497";
   if (api == ""){
     tile[2] = "No Api Key";
     console.log("need api key for this");
     return;
   }
-  url = start + tile[0] + api;
+  // url = start + tile[0] + api;
+  url = start + tile[0] + "&apiKey=" + api
   var request = new Request(url);
   fetch(request).then(function(request) {
     return request.json();
@@ -260,7 +272,7 @@ function update_news(tile){
     tile[2] = json.articles[0].title;
   }).catch(function(error){
     console.log(error)
-    tile[0] = "No Api Key";
-    tile[2] = "https://newsapi.org";
+    tile[0] = "json.articles[0].url";
+    tile[2] = json.articles[0].title;
   });
 };
