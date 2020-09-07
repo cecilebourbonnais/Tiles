@@ -42,32 +42,38 @@ var pages = {
     ["#","~news","News","Headlines"],
     ["#","g","Google","Gsuite"],
     ["#","me","Media","Stream"],
-    ["#","hw","School","Study Materials"],
+    ["#","hw","School","Study"],
+    ["#","cash","Money","Savings"],
+    ["#","toolbox2","Resources","Tools"],
     ["#","~twitter","Networks","Social Media"],
     ["#","mt","Computer","~/hack.sh"],
   ],
   "Home":[ // Index page loads at and resets to on end of search or 'esc'
     // ["https://nyt.com","ba","Back","To NYT","*"],
     ["~Weather"], // syntax for referencing functions
-    ["~School"],
     // ["https://todoist.com/app#start","td","Todoist","Tasks"],
     ["~News"],
+    ["~School"],
     ["~Media"],
     ["~Networks"],
     ["~Computer"],
+    ["~Resources"],
+    ["~Money"],
     ["~Google"],
     // ["https://icons8.com","ic","Icons8","Icon Set"],
     ["~Themes"],
   ],
   "Media":[
-    ["https://netflix.com","nt","Netflix","US Proxy"],
-    ["https://play.hbomax.com/page/urn:hbo:page:home","hb","HBO Max","The Leftovers!!"],
+    ["https://netflix.com","nt","Netflix","Streaming"],
+    ["https://play.hbomax.com/page/urn:hbo:page:home","hb","HBO Max","The Leftovers"],
     ["https://www.youtube.com/","yt","Youtube","Videos"],
     ["https://www.hulu.com","hu","Hulu","Live TV"],
     ["https://disneyplus.com","di","Disney+","Pixar"],
+    ["https://www.amazon.com/Prime-Video/b?ie=UTF8&node=2676882011","prime2","Prime","Bezos"],
     // ["https://twitch.com","tt","Twitch","Livestream"],
     ["https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index","fm","Free Media","Links Wiki"],
     ["https://www.stream2watch.io","ad","Sports","Live Football"],
+    ["https://getmetastream.com/","meta","Metastream","Watch Together"],
   ],
   "Computer":[
     ["~Github"],
@@ -87,24 +93,31 @@ var pages = {
     ["http://maps.google.com","gmaps"," Maps","Directions"],
     ["https://images.google.com","gim","Images","Photos"],
   ],
+  "Money":[
+    ["https://slickdeals.com","slickdeals","Slickdeals","Deals"],
+    ["https://www.chase.com","chase2","Chase","Bank"],
+    ["https://www.schwab.com/public/schwab/client_home","schwab2","Schwab","IRA"],
+    ["https://www.wealthfront.com/dashboard","wealthfront"," Wealthfront","Investing"],
+  ],
   "Networks":[
     ["https://twitter.com","~twitter","Twitter","Internet News"],
-    ["https://facebook.com","fa","Facebook","Delete me"],
-    ["https://reddit.com/","re","Reddit","Homepage"],
     ["https://www.instagram.com","im","Instagram","Photos"],
     ["http://ohnotheydidnt.livejournal.com","ontd2","ONTD","Gossip"],
+    ["https://facebook.com","fa","Facebook","Acquaintances"],
+    ["https://reddit.com/","re","Reddit","Homepage"],
     ["https://www.reddit.com/r/Barca","barca","Barça","r/barca"],
     ["https://www.reddit.com/r/Soccer","soccer","Soccer","r/soccer"],
     ["~Linkedn"],
   ],
   "News":[
     ["https://nyt.com","nyt2","New York Times","The Times"],
-    ["https://www.washingtonpost.com","washpo2","Washington Post","Bezos"],
+    ["https://www.washingtonpost.com","washpo2","The Post","Bezos"],
     ["https://news.ycombinator.com","yc","Hacker News","Entrepreneurship"],
-    ["http://longform.org","bookmark","Longform","Top-shelf"],
-    ["https://nationalgeographic.com","pnr","Nat Geo","Great Outdoors"],
+    ["https://nationalgeographic.com","natgeo","Nat Geo","Great Outdoors"],
     ["https://theverge.com","ver","The Verge","Tech News"],
-    ["https://www.vox.com/energy-and-environment","vox","Vox","Energy News"],
+    ["https://www.utilitydive.com","greentech","Utility Dive","Energy News"],
+    ["https://knewz.com","knewz","Knewz","Aggregator"],
+    ["http://longform.org","bookmark","Longform","Top-shelf"],
   ],
   "School":[
     ["http://axess.sahr.stanford.edu","stanford","Axess","Enrollment"],
@@ -143,7 +156,7 @@ var pages = {
     ["https://www.wolframalpha.com/input/?i=VAR","wp","Wolfram","\"VAR\"",term],
   ],
   "Themes":[ // put tiles for each theme here
-    ["$","nord","Nord","Arctic, Bluish",["#2E3440","#5E81AC","#88C0D0","#D8DEE9","#ECEFF4"]],
+    ["$","nord","Nord","Arctic, Bluish",["#3B4252","#5E81AC","#88C0D0","#D8DEE9","#ECEFF4"]],
     ["$","nordlight","Nord Light","Daytime Hues",["#E5E9F0","#81A1C1","#5E81AC","#4C566A","#2E3440"]],
     ["$","ds","Discord","Purple, Black, Grey",['#23272A','#2C2F33','#7289DA','#7289DA','#99AAB5']],
     ["$","sk","Skeletor","Green, Purple, Green",  ["#2b2836","#93b4ff","#bd93f9","#84fba2","#ffffff"]],
@@ -217,7 +230,7 @@ function update_weather(num){
       weather = wtile;
       oldzip = zip;
       if (num != undefined){
-        set_tile(num, [url,"50px",images[weather[1]],weather[2],weather[3]]);
+        set_tile(num, ["https://www.wunderground.com/weather/us/ca/palo-alto/94303","50px",images[weather[1]],weather[2],weather[3]]);
       };
       console.log("updated weather for " + zip + " - " + wtile);
     }).catch(function(error){

@@ -31,20 +31,23 @@ div#grid {
 	position: center;
 	width: 95vw;
 	height: 90vh;
-	top: 10vh;
+  top: 10vh;
+  
 }
 div#grid table {
   background-color: var(--background);
 	font-family: 'menlo', sans-serif;
 	border-collapse: separate;
 	border-spacing: 5px;
-	font-size: 10px;
+  font-size: 10px;
+
 }
 
 div#grid table tr td {
   background-color: var(--background);
 	height: 25vh;
-	width: 200vw;
+  width: 200vw;
+
 }
 
 div#grid table tr td a {
@@ -56,22 +59,28 @@ div#grid table tr td a {
 	display: block;
 	padding: 4px;
 	height: 12vh;
-	width: 18vw;
+  width: 18vw;
+  
+  
 }
 
 div#grid h3 {
   padding-left: 45%;
   font-size: 13px;
+  padding-top: 5%;
 }
 
 div#grid p {
   padding-left: 45%;
 	font-size: 10px;
   color: var(--sub-txt);
+  padding-right:2%
+
 }
 .button img {
   display: fixed;
-	padding-right: 65%;
+  padding-right: 65%;
+  padding-top: 5%;
 }
 
 div#grid table tr td a img {
@@ -79,8 +88,11 @@ div#grid table tr td a img {
 	opacity: 1;
 	right: 1px;
 	z-index: 0;
-	top: 5px;
+  top: 5px;
+  
 }
+ 
+
 div#grid table tr td a:focus img, div#grid table tr td a:hover img {
 	-webkit-filter: drop-shadow(3px 3px 0 var(--main-cl)) drop-shadow(-3px -3px 0 var(--comp-cl));
 	filter:drop-shadow(3px 3px 0 var(--main-cl)) drop-shadow(-3px -3px 0 var(--comp-cl));
