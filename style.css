@@ -60,14 +60,12 @@ div#grid table tr td a {
 	padding: 4px;
 	height: 12vh;
   width: 18vw;
-  
-  
 }
 
 div#grid h3 {
   padding-left: 45%;
   font-size: 13px;
-  padding-top: 5%;
+  /* padding-top: 5%; */
 }
 
 div#grid p {
@@ -80,7 +78,7 @@ div#grid p {
 .button img {
   display: fixed;
   padding-right: 65%;
-  padding-top: 5%;
+  /* padding-top: 5%; */
 }
 
 div#grid table tr td a img {
@@ -91,18 +89,23 @@ div#grid table tr td a img {
   top: 5px;
   
 }
- 
+
+div#grid table tr td a:focus, div#grid table tr td a:hover {
+  /* box-shadow: 3px 3px 0 var(--main-cl), -3px -3px 0 var(--comp-cl); */
+  /* get rid of border around selected box */
+  box-shadow: 0px 0px 0 var(--main-cl), 0px 0px 0 var(--comp-cl);
+  outline: var(--background);
+  color:var(--main-cl) 
+}
+
+
 
 div#grid table tr td a:focus img, div#grid table tr td a:hover img {
 	-webkit-filter: drop-shadow(3px 3px 0 var(--main-cl)) drop-shadow(-3px -3px 0 var(--comp-cl));
 	filter:drop-shadow(3px 3px 0 var(--main-cl)) drop-shadow(-3px -3px 0 var(--comp-cl));
 }
 
-div#grid table tr td a:focus, div#grid table tr td a:hover {
-	box-shadow: 3px 3px 0 var(--main-cl), -3px -3px 0 var(--comp-cl);
-	outline: 0;
-}
-
+ 
 footer form input[type="text"] {
 	background-color: var(--background);
   color: var(--sub-txt);

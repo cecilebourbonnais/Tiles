@@ -44,8 +44,8 @@ var pages = {
     ["#","me","Media","Stream"],
     ["#","hw","School","Study"],
     ["#","cash","Money","Savings"],
-    ["#","toolbox2","Resources","Tools"],
     ["#","~twitter","Networks","Social Media"],
+    ["#","toolbox2","Misc","Other Links"],
     ["#","mt","Computer","~/hack.sh"],
   ],
   "Home":[ // Index page loads at and resets to on end of search or 'esc'
@@ -57,19 +57,19 @@ var pages = {
     ["~Media"],
     ["~Networks"],
     ["~Computer"],
-    ["~Resources"],
     ["~Money"],
+    ["~Misc"],
     ["~Google"],
     // ["https://icons8.com","ic","Icons8","Icon Set"],
     ["~Themes"],
   ],
   "Media":[
     ["https://netflix.com","nt","Netflix","Streaming"],
-    ["https://play.hbomax.com/page/urn:hbo:page:home","hb","HBO Max","The Leftovers"],
-    ["https://www.youtube.com/","yt","Youtube","Videos"],
     ["https://www.hulu.com","hu","Hulu","Live TV"],
+    ["https://www.amazon.com/Prime-Video/b?ie=UTF8&node=2676882011","prime3","Prime Video","Amazon TV"],
+    ["https://play.hbomax.com/page/urn:hbo:page:home","hb","HBO Max","The Leftovers"],
     ["https://disneyplus.com","di","Disney+","Pixar"],
-    ["https://www.amazon.com/Prime-Video/b?ie=UTF8&node=2676882011","prime2","Prime","Bezos"],
+    ["https://www.youtube.com/","yt","Youtube","Videos"],
     // ["https://twitch.com","tt","Twitch","Livestream"],
     ["https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index","fm","Free Media","Links Wiki"],
     ["https://www.stream2watch.io","ad","Sports","Live Football"],
@@ -77,10 +77,10 @@ var pages = {
   ],
   "Computer":[
     ["~Github"],
-    ["http://stackoverflow.com","st","Stack Overflow","Java?"],
-    ["https://1password.com","op","1Password","Database"],
+    ["http://stackoverflow.com","st","Stack Overflow","Help"],
+    ["https://www.alfredforum.com/forum/2-discussion-help/","alfred","Alfred","Workflows"],
     ["https://icons8.com","ic","Icons8","Icon Set"],
-    ["https://github.com/amix/vimrc","vm","Vimrc","runtime config"],
+    ["https://fast.com/","fast","Fast","Speed Test"],
     ["https://atom.io","at","Atom.io","IDE"],
     ["https://internetingishard.com/html-and-css/","go","Interneting is hard","HTML Guide"],
     ["https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet","md","Markdown","Cheatsheet"],
@@ -91,13 +91,16 @@ var pages = {
     ["https://drive.google.com/drive/u/0/my-drive","gdrive","Drive","Files"],
     ["https://docs.google.com/documnt/u/0/","gdocs","Docs","Papers"],
     ["http://maps.google.com","gmaps"," Maps","Directions"],
-    ["https://images.google.com","gim","Images","Photos"],
+    ["https://images.google.com","gim","Images","Search"],
+    ["https://photos.google.com","gph","Photos","Albums"],
   ],
   "Money":[
     ["https://slickdeals.com","slickdeals","Slickdeals","Deals"],
-    ["https://www.chase.com","chase2","Chase","Bank"],
+    ["https://www.chase.com","chase2","Chase","Checking"],
     ["https://www.schwab.com/public/schwab/client_home","schwab2","Schwab","IRA"],
-    ["https://www.wealthfront.com/dashboard","wealthfront"," Wealthfront","Investing"],
+    ["https://www.wealthfront.com/dashboard","wealthfront3"," Wealthfront","Investing"],
+    ["https://retirementplans.vanguard.com/web/cfv/pex-secure-overview/home","vanguard2"," Vanguard","401k"],
+
   ],
   "Networks":[
     ["https://twitter.com","~twitter","Twitter","Internet News"],
@@ -109,9 +112,13 @@ var pages = {
     ["https://www.reddit.com/r/Soccer","soccer","Soccer","r/soccer"],
     ["~Linkedn"],
   ],
+  "Misc":[
+    ["http://camelcamelcamel.com","lowprice","Camelcamelcamel","Price Tracker"],
+    ["https://downforacross.now.sh","puzzle","Down for a Cross","Crosswords"],
+  ],
   "News":[
     ["https://nyt.com","nyt2","New York Times","The Times"],
-    ["https://www.washingtonpost.com","washpo2","The Post","Bezos"],
+    ["https://www.washingtonpost.com","washpo2","Washington Post","The Post"],
     ["https://news.ycombinator.com","yc","Hacker News","Entrepreneurship"],
     ["https://nationalgeographic.com","natgeo","Nat Geo","Great Outdoors"],
     ["https://theverge.com","ver","The Verge","Tech News"],
@@ -122,22 +129,11 @@ var pages = {
   "School":[
     ["http://axess.sahr.stanford.edu","stanford","Axess","Enrollment"],
     ["https://canvas-gateway.stanford.edu/goCanvas.html","canvas","Canvas","Courses"],
-
+    ["https://web.stanford.edu/class/msande226/","scatter","MS&E 226","Class Page"],
+    ["https://piazza.com/class/keizx0qczxe2kw?cid=1","piazza","Piazza","Q&As"],
+    ["https://exploredegrees.stanford.edu/schoolofengineering/managementscienceandengineering/#masterstext","todo","MS&E MS","Requirements"],
   ],
 
-
-  // "News":[
-  //   ["bbc-news","~bbc","BBC","","news"],
-  //   ["the-new-york-times","~globe","New York Times","","news"],
-  //   ["reuters","ru","Reuters","","news"],
-  //   ["ars-technica","ars","Ars Technica","","news"],
-  //   ["cnn","cnn","CNN","","news"],
-  //   ["ign","ign","ign","","news"],
-  //   ["the-verge","ver","The Verge","","news"],
-  //   ["hacker-news","yc","Ycombinator","","news"],
-  //   ["national-geographic","pnr","Nat Geo","","news"],
-  //   ["https://newsapi.org","n","News Api","Headlines"],
-  // ],
   /*
     Dict of possible live tiles
     - Search -> Search possible source with VAR placeholder for parser to fill
@@ -156,16 +152,13 @@ var pages = {
     ["https://www.wolframalpha.com/input/?i=VAR","wp","Wolfram","\"VAR\"",term],
   ],
   "Themes":[ // put tiles for each theme here
-    ["$","nord","Nord","Arctic, Bluish",["#3B4252","#5E81AC","#88C0D0","#D8DEE9","#ECEFF4"]],
+    ["$","nord","Nord","Arctic, Bluish",["#3B4252","#88C0D0","#5E81AC","#ECEFF4","#D8DEE9"]],
     ["$","nordlight","Nord Light","Daytime Hues",["#E5E9F0","#81A1C1","#5E81AC","#4C566A","#2E3440"]],
     ["$","ds","Discord","Purple, Black, Grey",['#23272A','#2C2F33','#7289DA','#7289DA','#99AAB5']],
     ["$","sk","Skeletor","Green, Purple, Green",  ["#2b2836","#93b4ff","#bd93f9","#84fba2","#ffffff"]],
-    ["$","tm","Terminal","Green Black",["#282828","#282828","#33FF33","#33FF33","#33FF33"]],
-    ["$","pnr","Gogh","Blue Green Yellow",["#0375B4","#007849","#FECE00","#FFFFFF","#FFFFFF"]],
     ["$","td","Todoist","Grey Red Yellow",["#1f1f1f","#fccf1b","#cd5650","#ffffff","#ffffff"]],
     ["$","me","Switch","Grey Red Blue",["#414548","#ff4554","#00c3e3","#ffffff","#ffffff"]],
     ["$","lv","Lava","Red Black",["#000000","#D32F2F","#DD4132","#99AAB5","#99AAB5"]],
-    ["$","tt","Purple","Purple Red Blue",["#6B5B95","#FF383F","#223A5E","#F0EDE5","#F0EDE5"]],
     ["$","bl","Blues","Blue, Grey",["#25274D","#2E9CCA","#29648A","#AAABB8","#ffffff"]],
   ]
 };
