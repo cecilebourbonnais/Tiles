@@ -128,10 +128,11 @@ var pages = {
   ],
   "School":[
     ["http://axess.sahr.stanford.edu","stanford","Axess","Enrollment"],
-    ["https://canvas-gateway.stanford.edu/goCanvas.html","canvas","Canvas","Courses"],
-    ["https://web.stanford.edu/class/msande226/","scatter","MS&E 226","Class Page"],
-    ["https://piazza.com/class/keizx0qczxe2kw?cid=1","piazza","Piazza","Q&As"],
+    ["https://canvas-gateway.stanford.edu/goCanvas.html","canvas","Canvas","Lectures"],
+    ["https://carta.stanford.edu/","feedback","Carta","Course Exploration"],
     ["https://exploredegrees.stanford.edu/schoolofengineering/managementscienceandengineering/#masterstext","todo","MS&E MS","Requirements"],
+    ["https://piazza.com/class/keizx0qczxe2kw?cid=1","piazza","Piazza","Q&As"],
+    ["https://web.stanford.edu/class/msande226/","scatter","MS&E 226","Class Page"],
   ],
 
   /*
