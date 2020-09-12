@@ -81,7 +81,7 @@ var pages = {
     ["https://www.alfredforum.com/forum/2-discussion-help/","alfred","Alfred","Workflows"],
     ["https://icons8.com","ic","Icons8","Icon Set"],
     ["https://fast.com/","fast","Fast","Speed Test"],
-    ["https://atom.io","at","Atom.io","IDE"],
+    ["https://www.lynda.com","lynda","Lynda","eLearning"],
     ["https://internetingishard.com/html-and-css/","go","Interneting is hard","HTML Guide"],
     ["https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet","md","Markdown","Cheatsheet"],
     ["https://keycode.info","ct","Keycodes","Javascript"],
