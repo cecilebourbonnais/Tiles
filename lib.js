@@ -73,18 +73,19 @@ var pages = {
     // ["https://twitch.com","tt","Twitch","Livestream"],
     ["https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/index","fm","Free Media","Links Wiki"],
     ["https://www.stream2watch.io","ad","Sports","Live Football"],
+    ["https://www.reddit.com/r/Piracy/wiki/megathread/movies_and_tv","torrents","Torrents","Media Links"],
     ["https://getmetastream.com/","meta","Metastream","Watch Together"],
   ],
   "Computer":[
     ["~Github"],
     ["http://stackoverflow.com","st","Stack Overflow","Help"],
     ["https://www.alfredforum.com/forum/2-discussion-help/","alfred","Alfred","Workflows"],
-    ["https://icons8.com","ic","Icons8","Icon Set"],
     ["https://fast.com/","fast","Fast","Speed Test"],
+    ["http://studybyyourself.com/seminar/sql/course/?lang=en","sql","Studybyyourself","Learn SQL"],
     ["https://www.lynda.com","lynda","Lynda","eLearning"],
     ["https://internetingishard.com/html-and-css/","go","Interneting is hard","HTML Guide"],
     ["https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet","md","Markdown","Cheatsheet"],
-    ["https://keycode.info","ct","Keycodes","Javascript"],
+    ["https://icons8.com","ic","Icons8","Icon Set"]
   ],
   "Google":[
     ["https://gmail.com","gm","Gmail","Inbox"],
@@ -129,7 +130,8 @@ var pages = {
   "School":[
     ["http://axess.sahr.stanford.edu","stanford","Axess","Enrollment"],
     ["https://canvas-gateway.stanford.edu/goCanvas.html","canvas","Canvas","Lectures"],
-    ["https://carta.stanford.edu/","feedback","Carta","Course Exploration"],
+    ["https://carta-beta.stanford.edu","feedback","Carta","Course Exploration"],
+    ["https://explorecourses.stanford.edu/search?view=catalog&filter-coursestatus-Active=on&page=0&catalog=&academicYear=&q=ms%26e&collapse=","planner","ExploreCourses","Planning"],
     ["https://exploredegrees.stanford.edu/schoolofengineering/managementscienceandengineering/#masterstext","todo","MS&E MS","Requirements"],
     ["https://piazza.com/class/keizx0qczxe2kw?cid=1","piazza","Piazza","Q&As"],
     ["https://web.stanford.edu/class/msande226/","scatter","MS&E 226","Class Page"],
